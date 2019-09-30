@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { CommonService } from '../../services/common.service';
 
 @Component({
   selector: "app-sidenav",
@@ -7,7 +8,10 @@ import { Router } from "@angular/router";
   styleUrls: ["./sidenav.component.scss"]
 })
 export class SidenavComponent implements OnInit {
-  constructor(private router: Router) {}
+  menus: [];
+  constructor(private router: Router, private service: CommonService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.service.sidebarMenuList().subscribe(data => this.menus = data);
+  }
 }
