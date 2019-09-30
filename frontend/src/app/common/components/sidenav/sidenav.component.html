@@ -1,4 +1,4 @@
-<p>sidenav works!</p>
+<!-- <p>sidenav works!</p>
 <ul>
   <li>
     <a [routerLink]="['/dashboard']">dashboard</a>
@@ -6,4 +6,18 @@
   <li>
     <a [routerLink]="['/projects']">projects</a>
   </li>
-</ul>
+</ul> -->
+
+
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Start Bootstrap </div>
+    <div class="list-group list-group-flush">
+      <ng-container *ngFor="let menu of menus">
+        <a [routerLink]="menu" routerLinkActive="active" class="list-group-item list-group-item-action">
+          {{menu}}
+        </a>
+      </ng-container>
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->

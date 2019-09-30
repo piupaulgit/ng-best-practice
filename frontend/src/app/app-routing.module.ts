@@ -10,7 +10,7 @@ const routes: Routes = [
       )
   },
   {
-    path: "projects",
+    path: "project",
     loadChildren: () =>
       import("./modules/projects/projects.module").then(m => m.ProjectsModule)
   }

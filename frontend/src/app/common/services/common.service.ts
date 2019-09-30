@@ -16,4 +16,7 @@ export class CommonService {
   getTableData(moduleName): Observable<any> {
     return this.http.get<any>(`${this.BASE_PATH}/${moduleName}`);
   }
+  sidebarMenuList(): Observable<any> {
+    return this.http.get<any>(this.BASE_PATH + "moduleName");
+  }
 }
