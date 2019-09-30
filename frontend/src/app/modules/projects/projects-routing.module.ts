@@ -5,7 +5,11 @@ import { ProjectsComponent } from "./projects.component";
 const routes: Routes = [
   {
     path: "",
-    component: ProjectsComponent
+    component: ProjectsComponent,
+    data: {
+      title: 'Projects',
+      icon: '&clubs;'
+    }
   }
 ];
 
