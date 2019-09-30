@@ -502,7 +502,7 @@
             "values": ["completed", "on going", "new"]
         },
         {
-            "priority": "priority",
+            "name": "priority",
             "values": ["high", "medium", "low"]
         }
     ],

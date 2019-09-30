@@ -1,1 +1,16 @@
-<p>filters works!</p>
+<div class="jumbotron p-4">
+  <h3 class="mb-2">Applied Filters(0)</h3>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let filter of filters.filters">
+      <div>
+        <label for="">{{ filter.name }}</label
+        ><select name="" id="" class="form-control">
+          <option value="">Select</option>
+          <ng-container *ngFor="let value of filter.values">
+            <option value="{{ value }}">{{ value }}</option>
+          </ng-container>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
