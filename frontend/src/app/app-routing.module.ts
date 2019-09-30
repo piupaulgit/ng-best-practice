@@ -13,6 +13,11 @@ const routes: Routes = [
     path: "project",
     loadChildren: () =>
       import("./modules/projects/projects.module").then(m => m.ProjectsModule)
+  },
+  {
+    path: "",
+    redirectTo: "/dashboard",
+    pathMatch: "full"
   }
 ];
 

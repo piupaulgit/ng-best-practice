@@ -4,14 +4,13 @@ import { DashboardComponent } from "./dashboard.component";
 
 const routes: Routes = [
   {
-    path: "Dashboard",
+    path: "",
     component: DashboardComponent,
     data: {
-      title: 'Dashboard',
-      icon: '&spades;'
+      title: "Dashboard",
+      icon: "&spades;"
     }
   }
-
 ];
 
 @NgModule({
